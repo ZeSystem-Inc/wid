@@ -1,0 +1,30 @@
+# Rust derleme çıktıları
+/target/
+**/*.rs.bk
+*.pdb
+*.d
+*.rlib
+
+# Windows geçici ve sistem dosyaları
+*.exe
+*.msi
+*.bak
+*.log
+*.tmp
+Thumbs.db
+desktop.ini
+
+# IDE ve editör dosyaları
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Inno Setup çıktısı
+/Output/
+*.iss.backup
+
+# Geçici klasörler
+/temp/
+/downloads/
