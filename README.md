@@ -1,29 +1,29 @@
-# 🚀 wid – Windows için Hızlı ve Özgür Paket Yükleyici
+# 🚀 wid – Fast & Free Package Installer for Windows
 
-**wid**, Windows için Rust ile yazılmış, **hızlı, hafif, özgür ve takılmayan** bir paket yükleyicisidir.  
-`apt` ve `pacman` felsefesini Windows'a taşır, ancak bağımlılık çözmez, **scraping** ile en güncel sürümleri bulur.
+**wid** is a **fast, lightweight, free, and non-blocking** package installer for Windows, written in Rust.  
+It brings the philosophy of `apt` and `pacman` to Windows, but does not resolve dependencies — instead, it uses **scraping** to find the latest versions.
 
-## ✨ Özellikler
+## ✨ Features
 
-- 🦀 **Rust ile yazıldı** – bellek güvenli, sıfır maliyetli, ultra hızlı.
-- ⚡ **~2 MB RAM** ile çalışır, `winget` ve `choco`'dan kat kat hafif.
-- 🌐 **Doğrudan TCP + rustls** ile **%99 bant hızı** (BITS veya Schannel yok).
-- 🕵️ **Scraping (Web Kazıma)** – HTML sayfalarından gerçek `.exe` ve `.msi` linklerini cımbızlar.
-- 📦 **Bağımlılık Çözmez** – Bu işi uygulamanın kendi installer'ına bırakarak en büyük kırılganlık kaynağını ortadan kaldırır.
-- 📝 **Sizin Havuzunuz** – `sources.list`'i kendiniz yönetirsiniz, merkezi bir otoriteye bağlı değilsiniz.
-- 🔓 **GPL v3** – Tamamen özgür, isteyen fork'layıp geliştirebilir.
+- 🦀 **Written in Rust** – memory-safe, zero-cost abstractions, ultra-fast.
+- ⚡ **~2 MB RAM** usage – significantly lighter than `winget` and `choco`.
+- 🌐 **Direct TCP + rustls** – achieves **~99% bandwidth** (no BITS or Schannel overhead).
+- 🕵️ **Scraping (Web Scraping)** – extracts real `.exe` and `.msi` links from HTML pages.
+- 📦 **No Dependency Resolution** – leaves dependency handling to the application's own installer, eliminating a major source of fragility.
+- 📝 **Your Own Repository** – you manage your own `sources.list` file, independent of any central authority.
+- 🔓 **GPL v3** – fully free and open-source; fork and modify as you wish.
 
-## 📥 Kurulum
+## 📥 Installation
 
-**Tek kurulum yöntemi:** [GitHub Releases](https://github.com/Z.eSystem-Inc/wid/releases) sayfasından `wid_installer.exe` dosyasını indirip çalıştırın.
+**The only supported installation method:** Download `wid_installer.exe` from the [GitHub Releases](https://github.com/Z.eSystem-Inc/wid/releases) page and run it.
 
-> ⚠️ **Not:** `cargo install` ile kurulum desteklenmemektedir. Sadece hazır `wid_installer.exe` kullanılmalıdır.
+> ⚠️ **Note:** Installation via `cargo install` is **not supported**. You must use the provided `wid_installer.exe` binary.
 
-## 🛠️ Kullanım
+## 🛠️ Usage
 
 ```bash
-wid update               # Paket listesini güncelle
-wid search <kelime>      # Havuzda arama yap
-wid install <uygulama>   # Uygulamayı indir ve kur
-wid upgrade <uygulama>   # Sürüm kontrolü yaparak yükselt
-wid clean                # Geçici dosyaları temizle
+wid update               # Update the package list
+wid search <keyword>     # Search the repository
+wid install <app>        # Download and install an application
+wid upgrade <app>        # Check for updates and upgrade if available
+wid clean                # Clean temporary files
