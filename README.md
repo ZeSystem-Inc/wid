@@ -15,7 +15,7 @@ It brings the philosophy of `apt` and `pacman` to Windows, but does not resolve 
 
 ## 📥 Installation
 
-**The only supported installation method:** Download `wid_installer.exe` from the [GitHub Releases](https://github.com/Z.eSystem-Inc/wid/releases) page and run it.
+**The only supported installation method:** Download `wid_installer.exe` from the [GitHub Releases](https://github.com/ZeSystem-Inc/wid/releases/tag/v1.0.0) page and run it.
 
 > ⚠️ **Note:** Installation via `cargo install` is **not supported**. You must use the provided `wid_installer.exe` binary.
 
