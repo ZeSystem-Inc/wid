@@ -26,7 +26,6 @@ fn main() {
         return;
     }
 
-    // UAC kontrolü: Eğer yönetici değilse kendini yönetici olarak yeniden başlat
     if !is_admin() {
         println!("🔑 Yönetici yetkisi gerekiyor, UAC yükseltiliyor...");
         let exe_path = std::env::current_exe().unwrap().to_str().unwrap().to_string();
