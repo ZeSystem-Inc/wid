@@ -1,0 +1,33 @@
+# Rust derleme çıktıları
+/target/
+**/*.rs.bk
+*.pdb
+*.d
+*.rlib
+
+# Windows executable ve geçici dosyalar
+*.exe
+*.msi
+*.bak
+*.log
+*.tmp
+Thumbs.db
+desktop.ini
+
+# Notepad++ yedek dosyaları
+*.bak
+
+# IDE ve editör dosyaları
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Inno Setup çıktısı
+/Output/
+*.iss.backup
+
+# Geçici klasörler
+/temp/
+/downloads/

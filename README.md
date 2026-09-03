@@ -1,54 +1,59 @@
-# 🚀 wid v1.2.2 – The Fastest Installer for Windows
+# 🚀 wid – Windows'un En Hızlı Yükleyicisi
 
-**wid** is a fast, lightweight, free, and non-blocking package installer for Windows, written in Rust.  
-It brings the philosophy of apt and pacman to Windows, but does not resolve dependencies — instead, it uses scraping to find the latest versions.
-
----
-
-## ✨ Features
-
-- 🦀 Written in Rust – memory-safe, zero-cost, ultra-fast.
-- ⚡ ~2 MB RAM – significantly lighter than winget, choco, or scoop.
-- 🌐 Direct TCP + rustls – achieves ~99% bandwidth (no BITS or Schannel overhead).
-- 🕵️ Scraping – extracts real .exe and .msi links from HTML pages.
-- 📦 No Dependency Resolution – leaves dependency handling to the app's own installer.
-- 📝 Your Own Repository – you manage your own sources.list file.
-- 🔓 GPL v3 – fully free and open-source.
+**wid**, Windows için Rust ile yazılmış, hızlı, hafif, özgür ve takılmayan bir paket yükleyicisidir.  
+`apt` ve `pacman` felsefesini Windows'a taşır, ancak bağımlılık çözmez, **scraping** ile en güncel sürümleri bulur.
 
 ---
 
-## 📦 Available Packages
+## ⚠️ Uyarı
 
-The package list is continuously updated. To see the current list:
+**v1.0.0 ve v1.2.2 artık desteklenmemektedir.**  
+Lütfen en son kararlı sürüm olan **v1.5.0**'ı kullanın.
+
+---
+
+## ✨ Özellikler
+
+- Rust ile yazıldı – bellek güvenli, ultra hızlı.
+- ~2 MB RAM – winget, choco veya scoop'tan kat kat hafif.
+- %99 bant hızı – BITS veya Schannel yok.
+- Scraping – en güncel .exe ve .msi linklerini bulur.
+- Bağımlılık çözmez – kırılganlık yok.
+- Kendi havuzun – sources.list ile merkezi otoriteye bağlı değilsin.
+- GPL v3 – tamamen özgür.
+
+---
+
+## 📦 Mevcut Paketler (30+)
 
     wid list
 
-You can also add your own packages by editing the sources.list file.
+Kendi paketlerini eklemek için sources.list dosyasını düzenleyebilirsin.
 
 ---
 
-## 📥 Installation
+## 📥 Kurulum
 
-**The only supported installation method:** Download `wid_installer.exe` from the [GitHub Releases](https://github.com/ZeSystem-Inc/wid/releases/tag/v1.2.2) page and run it.
+**Tek kurulum yöntemi:** GitHub Releases'den `wid_installer.exe` indirip çalıştır.
 
-> ⚠️ **Note:** Installation via `cargo install` is **not supported**. You must use the provided `wid_installer.exe` binary.
+> cargo install desteklenmez.
 
 ---
 
-## 🛠️ Usage
+## 🛠️ Kullanım
 
-    wid list                  # List all packages
-    wid info <app>            # Show package details
-    wid update                # Update package list
-    wid search <keyword>      # Search repository
-    wid install <app>         # Download and install
-    wid upgrade <app>         # Upgrade a package
-    wid upgrade --all         # Upgrade all packages
-    wid remove <app>          # Remove an app (UAC)
-    wid clean                 # Clean temporary files
-    wid --version             # Show wid version
+    wid list                  # Tüm paketleri listele
+    wid info <uygulama>       # Paket detayları
+    wid update                # Paket listesini güncelle
+    wid search <kelime>       # Havuzda arama
+    wid install <uygulama>    # Uygulama kur
+    wid upgrade <uygulama>    # Uygulamayı yükselt
+    wid upgrade --all         # Tüm paketleri güncelle
+    wid remove <uygulama>     # Uygulamayı kaldır (UAC)
+    wid clean                 # Geçici dosyaları temizle
+    wid --version             # Wid sürümünü göster
 
-**Examples:**
+**Örnekler:**
 
     wid install vscode
     wid upgrade git
@@ -58,17 +63,17 @@ You can also add your own packages by editing the sources.list file.
 
 ---
 
-## 📄 License
+## 📄 Lisans
 
-**GPL v3** – Use it freely, fork it, improve it.
-
----
-
-**Compatibility:** Windows Vista, 7, 8, 10, 11 (64-bit).
+**GPL v3**
 
 ---
 
-## 🔗 Links
+**Uyumluluk:** Windows Vista, 7, 8, 10, 11 (64-bit).
+
+---
+
+## 🔗 Bağlantılar
 
 - GitHub: https://github.com/ZeSystem-Inc/wid
-- Releases: https://github.com/ZeSystem-Inc/wid/releases/tag/v1.2.2
+- Releases: https://github.com/ZeSystem-Inc/wid/releases/tag/v1.5.0
