@@ -1,11 +1,11 @@
-# Rust derleme çıktıları
+# Rust build artifacts
 /target/
 **/*.rs.bk
 *.pdb
 *.d
 *.rlib
 
-# Windows executable ve geçici dosyalar
+# Windows executables and temporary files
 *.exe
 *.msi
 *.bak
@@ -14,20 +14,20 @@
 Thumbs.db
 desktop.ini
 
-# Notepad++ yedek dosyaları
+# Notepad++ backup files
 *.bak
 
-# IDE ve editör dosyaları
+# IDE and editor files
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
 
-# Inno Setup çıktısı
+# Inno Setup output
 /Output/
 *.iss.backup
 
-# Geçici klasörler
+# Temporary folders
 /temp/
 /downloads/
